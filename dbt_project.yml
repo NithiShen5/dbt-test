@@ -60,6 +60,5 @@ models:
       +materialized: view
     marts:
       +materialized: table
-    DbtPractise:
-      materialized: table
+
       
