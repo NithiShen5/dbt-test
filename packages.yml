@@ -1,5 +1,5 @@
 packages:
   - package: Datavault-UK/dbtvault
     version: 0.7.9
-#  - package: dbt-labs/dbt_utils
-#    version: 0.1.7
+  - package: dbt-labs/dbt_utils
+    version: 0.8.0
