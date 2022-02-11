@@ -31,9 +31,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 # In this example config, we tell dbt to build all models in the example/ directory
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
-Vars:
-  AMPMvariable : 'PM'
-  minid : 5000
+#Vars:
+#  AMPMvariable : 'PM'
+#  minid : 5000
 
 models:
   jaffle_shop:
@@ -45,6 +45,6 @@ models:
   DbtPractise:
     # Applied to all folders and files under dbtpractise folder#
       +materialized: table
-      Vars:
-       AMPMvariable : 'PM'
-       minid : 5000
+#      Vars:
+#       AMPMvariable : 'PM'
+#       minid : 5000
