@@ -38,3 +38,8 @@ models:
       +materialized: view
     marts:
       +materialized: table
+  DbtPractise:
+    # Applied to all folders and files under dbtpractise folder#
+    Vars:
+     AMPMvariable : PM
+     minid : 5000

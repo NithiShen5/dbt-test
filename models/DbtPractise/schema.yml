@@ -10,7 +10,7 @@ models:
             tests:
                 - unique
                 - not_null
-    - name: Time
+    - name: TimeIncr
       description: "test incremental load"
       columns:
           - name: T_TIME_ID
