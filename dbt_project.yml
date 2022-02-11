@@ -2,10 +2,13 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: dbtvault_snowflake_demo
-profile: dbtvault_snowflake_demo
+name: jaffle_shop
+profile: jaffle_shop
 version: '5.0.0'
-require-dbt-version: ['>=0.18.0', '<0.19.0']
+
+require-dbt-version: ">=0.18.0"
+require-dbt-version: "<0.19.0"
+
 config-version: 2
 
 analysis-paths:
@@ -27,7 +30,7 @@ vars:
   tpch_size: 10 #1, 10, 100, 1000, 10000
 
 models:
-  dbtvault_snowflake_demo:
+  jaffle_shop:
     raw_stage:
       tags:
         - 'raw'
@@ -53,3 +56,10 @@ models:
       t_links:
         tags:
           - 't_link'
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
+    DbtPractise:
+      materialized: table
+      
