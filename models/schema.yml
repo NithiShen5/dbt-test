@@ -13,3 +13,7 @@ sources:
       - name: PART
       - name: NATION
       - name: REGION
+models:
+    - name: raw_orders
+      description: "raw staging of orders from snowflake demo"
+      
